@@ -1,0 +1,29 @@
+
+POST http://localhost:8080/bills/add HTTP/1.1
+content-type: application/json
+
+{
+  "balance": 500,
+  "dayDue": 4,
+  "interestRate": 3.5,
+  "limit": 2000,
+  "payment": 150,
+  "title": "Amex",
+  "userId": "cl5pq0rh20000qutrlajoiq73"
+}
+
+###
+POST http://localhost:8080/signup HTTP/1.1
+content-type: application/json
+
+{
+  "email": "lwood3499@gmail.com",
+  "password": "password123",
+  "bills": []
+}
+
+###
+GET http://localhost:8080/bills/cl5pkhrli0000yptrzmd4kpwd HTTP/1.1
+
+###
+GET http://localhost:8080/users
